@@ -2,8 +2,9 @@
     --primary-color: #1d4e6e;
     --secondary-color: #f0f0f0;
     --text-color: black;
-    --font-family: "Jost", sans-serif;;
-    --font-style: roboto, sans-serif;
+    --border-color: #949090;
+    --font-family: "Jost", sans-serif;
+    --font-style: "Sanchez", serif;
 }
 
 * {
@@ -21,7 +22,7 @@ header {
 #course-title {
     display: block;
     font-family: var(--font-style);
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 15px;
 }
 
@@ -38,4 +39,64 @@ nav a {
     padding: 10px;
     font-family: var(--font-family);
     font-size: 1.2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+    font-family: var(--font-style);
+    font-size: 2rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    display: block;
+    margin: 1rem;
+    border-radius: .6rem;
+    border: 1px solid var(--border-color);
+}
+
+.card h2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: var(--font-style);
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.card h3 {
+    display: block;
+    margin: 0 2rem 0 2rem;
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color);
+    font-family: var(--font-style);
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.card img {
+    display: block;
+    margin: 1rem;
+    float: right;
+}
+
+.card p {
+    display:block;
+    margin: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--text-color);
 }
