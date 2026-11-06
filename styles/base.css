@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #1d4e6e;
+    --secondary-color: #f0f0f0;
+    --text-color: black;
+    --font-family: "Jost", sans-serif;;
+    --font-style: roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--font-style);
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
