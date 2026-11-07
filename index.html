@@ -17,6 +17,8 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Angelica Sulub</title>
 
     <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
     
 </head>
 
@@ -36,23 +38,28 @@
         <h1>Angelica Sulub</h1>
         <section class="card">
             <h2>About me</h2>
-            <img src="images/profile.jpg" alt="Angelica Sulub" width="150" height="200">
-            <p>My name is Angelica Sulub. I am from Yucatan, Mexico, and I am excited to be part of the WDD 131 course.
-               I am passionate about web development and eager to learn new skills in this field. 
-               I like to explore different technologies and stay updated with the latest trends in web development. 
-            </p>
+            <div class="about-profile">
+                <img src="images/profile.jpg" alt="Angelica Sulub" width="150" height="200">
+                <p>My name is Angelica Sulub. I am from Yucatan, Mexico, and I am excited to be part of the WDD 131 course.
+                I am passionate about web development and eager to learn new skills in this field. 
+                I like to explore different technologies and stay updated with the latest trends in web development. 
+                </p>
+            </div>
 
             <h3>Yucatan, Mexico</h3>
-            <figure>
-            <img src="images/mexicos flag.jpg" alt="Mexico Flag" width="200">
-            <figcaption>Oficial Mexico Flag</figcaption>
-            </figure>
+            <div class="state">
+                <figure>
+                <img src="images/mexicos flag.jpg" alt="Mexico Flag" width="200">
+                <figcaption>Official Flag of Mexico</figcaption>
+                </figure>
             
-            <p>Yucatan is a beautiful region in Mexico known for its rich history, culture, and natural beauty. 
+                <p>Yucatan is a beautiful region in Mexico known for its rich history, culture, and natural beauty. 
                It is home to ancient Mayan ruins, stunning beaches, and vibrant cities. 
                I am proud to be from Yucatan. An interesting fact about Yucatán is that when it sought to gain 
                independence from Mexico, it created its own flag, and this flag was approved for use in 2024.
                </p>
+            </div>
+            
         </section>
 
         <section class="card">
@@ -70,14 +77,12 @@
 
     <footer>
         <p>
-            &copy; 🌮
-            <span id="currentyear"></span>
+            &copy;
+            <span id="currentYear"></span>
             🌮 Angelica Sulub 🌮 Mexico 
         </p>
 
-        <p>
-            <span id="lastModified"></span>
-        </p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
