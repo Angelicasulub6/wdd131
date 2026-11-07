@@ -1,9 +1,8 @@
 :root {
     --primary-color: #1d4e6e;
     --secondary-color: #f0f0f0;
-    --accent-color: #ffd166;
     --text-color: black;
-    --border-color: #949090;
+    --border-color: #868181;
     --font-family: "Jost", sans-serif;
     --font-style: "Sanchez", serif;
 }
@@ -93,11 +92,6 @@ figcaption {
     border: 1px solid var(--border-color);
 }
 
-.card img {
-    width: 200;
-    height: 200;
-}
-
 .card h2 {
     display: block;
     text-align: center;
@@ -133,7 +127,13 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.1rem;
+    font-family: var(--font-family);
     padding: 3rem;
+}
+
+.card ul :hover{
+    color:#f13535;
 }
 
 footer {
@@ -151,7 +151,7 @@ footer p {
 
 #lastModified {
     text-align: center;
-    color: var(--accent-color);
     font-family: var(--font-family);
     font-size: 1.1rem;
+    color: #ffd166;
 }
