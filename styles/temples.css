@@ -37,7 +37,7 @@ a {
 nav {
     font-family: var(--font-style);
     font-size: 1.3rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
