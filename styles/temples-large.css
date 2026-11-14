@@ -8,32 +8,20 @@
     }
 
     header h1 {
-        text-align: left;
-    }
-
-    .site-title {
-        font-size: 2.5rem;
-    }
-
-    #menuButton {
-        display: none;
+        text-align: center;
     }
 
     .navigation {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        width: auto;
-        align-items: center;
-    }
-
-    .navigation a {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    .figure {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }

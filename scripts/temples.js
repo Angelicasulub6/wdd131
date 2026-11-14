@@ -5,10 +5,10 @@ document.querySelector("#currentYear").textContent = currentYear;
 document.querySelector("#lastModified").textContent =
     "Last Modification: " + document.lastModified;
 
-const hamButton = document.querySelector("#menuButton");
-const navigation = document.querySelector(".navigation");
+    const mainnav = document.querySelector('.navigation')
+    const hambutton = document.querySelector('#menu');
 
-hamButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    hamButton.classList.toggle("open");
+    hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
 });
