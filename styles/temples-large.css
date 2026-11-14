@@ -19,12 +19,17 @@
         display: none;
     }
 
-    nav {
+    .navigation {
         display: flex;
         flex-direction: row;
         gap: 2rem;
         width: auto;
         align-items: center;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
     }
 
     .figure {

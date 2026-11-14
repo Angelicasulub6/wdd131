@@ -45,8 +45,12 @@ nav {
     gap: 1rem;
 }
 
-nav.open {
-    display: flex;
+.open a {
+    display: block;
+}
+
+.navigation a {
+    display: none;
 }
 
 nav a:hover {
@@ -81,11 +85,21 @@ footer {
     text-align: center;
 }
 
-#menuButton {
-    display: block;
-    background-color: none;
-    border: none;
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
     color: white;
-    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
 }
