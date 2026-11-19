@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+main {
+    display: block;
+}
+
 body {
     font-family: var(--font-text);
     background-color: var(--accent-color);
@@ -28,8 +32,9 @@ h1 {
 
 .hero {
     display: block;
+    width: 100%;
     padding-top: 1rem;
-    padding-bottom: .5rem;
+    padding-bottom: .7rem;
     background-color: var(--secondary-color);
 }
 
@@ -43,11 +48,12 @@ section {
     font-family: var(--font-text);
 }
 
-.data {
+.data,
+.weather {
     width: 100%;
     padding: 1rem;
     background-color: var(--accent-color);
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
 }
 
 .data h2,
@@ -69,19 +75,14 @@ section {
     padding: .5rem;
 }
 
-.data th
+.data th,
 .weather th {
     text-align: right;
 }
 
-.data td
+.data td,
 .weather td {
     text-align: left;
-}
-
-.weather {
-    padding: 1.5rem;
-    background-color: var(--accent-color);
 }
 
 .weather img {
@@ -89,17 +90,6 @@ section {
     width: 90px;
     height: auto;
     margin: 0 auto 1rem;
-}
-
-.weather h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    padding: 0 0 1rem 0;
-
-}
-
-.weather h2 ::after {
-    content: ;
 }
 
 footer {
